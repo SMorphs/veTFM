@@ -1,7 +1,7 @@
 clc; close all; clear
 addpath('src');
 
-%% FIG. 2 - EXACT
+%% FIG. 2 
 addpath("data/fig2/");
 h = 2e-6;
 dts = logspace(-1,log10(20),21);
@@ -56,7 +56,7 @@ t_hdf_veTFM_Ana = viscoI_t(hdf_vetfm.u,hdf_vetfm.ds,hdf_vetfm.ns,hdf_vetfm.dt,h,
 t_hdf_eTFM0 = elastI_t(hdf_vetfm.u,hdf_vetfm.ds,hdf_vetfm.ns,h,eTFM0Mat); % eTFM0
 t_hdf_eTFMI = elastI_t(hdf_vetfm.u,hdf_vetfm.ds,hdf_vetfm.ns,h,eTFMIMat); % eTFMI
 
-%% FIG. 4 - CLOSE ENOUGH
+%% FIG. 4 
 addpath("data/fig3/"); addpath("data/fig4/");
 h = 1.0775e-04;
 alphas1 = linspace(0.05,0.95,10);
